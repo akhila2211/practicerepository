@@ -18,11 +18,11 @@ public class Web_table {
 			 
 			 //rows count
 			int rows= driver.findElements(By.xpath("//table[@name=\"BookTable\"]//tr")).size();
-			System.out.println("number of R="+rows);
+			System.out.println("number of Rows="+rows);
 			
 			//total coloumn count
 			int col= driver.findElements(By.xpath("//table[@name=\"BookTable\"]//tr//th")).size();
-			System.out.println("number of C="+col);
+			System.out.println("number of Coloumn="+col);
 			
 			//specific element finding
 			String element= driver.findElement(By.xpath("//table[@name=\"BookTable\"]//tr[4]//td[2]")).getText();
@@ -71,7 +71,7 @@ public class Web_table {
 					
 				}
 				
-				System.out.println("Total price of books:"+sum);
+				System.out.println("Total price(sum) of books:"+sum);
 			}
 			}
 	}		
